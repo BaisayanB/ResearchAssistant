@@ -79,17 +79,20 @@ Then open your browser at http://localhost:8501.
 
 ## ⚙️ Project Structure
 
+```bash
 📂 researchpaper-assistant
 ├── app.py # Main Streamlit app (search & chat views)
 ├── extractor.py # Handles PDF download, extraction, metadata
 ├── llm.py # Sets up Gemini LLM and manages chat sessions
 ├── requirements.txt
 └── README.md
+```
 
 ---
 
 ## 🗂️ How It Works
 
+<pre> ```mermaid
 flowchart TD
 A[User enters query / arXiv ID] --> B[Search arXiv API<br/>(fetch metadata)]
 B --> C[Download PDF<br/>from arXiv]
@@ -99,28 +102,23 @@ E --> F[Initialize Gemini LLM Chat]
 F --> G[User asks questions]
 G --> H[Gemini generates structured<br/>analogy-first answers]
 H --> G[[Loop: Ask more questions]]
+``` </pre>
 
 ---
 
 ## 🔑 Key Technologies
 
-Streamlit
-– Web interface
+- **Streamlit** – Web interface
 
-arxiv
-– Paper search API
+- **arxiv** – Paper search API
 
-PyMuPDF (fitz)
-– PDF text extraction
+- **PyMuPDF (fitz)** – PDF text extraction
 
-Requests
-– Downloading PDFs
+- **Requests** – Downloading PDFs
 
-Google Generative AI
-– Gemini LLM integration
+- **Google Generative AI** – Gemini LLM integration
 
-python-dotenv
-– Environment variable management
+- **python-dotenv** – Environment variable management
 
 ---
 
@@ -132,10 +130,10 @@ python-dotenv
 
 ## 🙌 Acknowledgements
 
-arXiv for open-access research
+- [**arXiv**](https://arxiv.org/) – for open-access research
 
-PyMuPDF for PDF parsing
+- [**PyMuPDF**](https://pymupdf.readthedocs.io/) – for PDF parsing
 
-Google Gemini for LLM-powered Q&A
+- [**Google Gemini**](https://ai.google/discover/gemini/) – for LLM-powered Q&A
 
-Streamlit for making ML apps so easy to build
+- [**Streamlit**](https://streamlit.io/) – for making ML apps so easy to build

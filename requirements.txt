@@ -1,0 +1,6 @@
+streamlit
+arxiv
+PyMuPDF
+requests
+google-generativeai
+python-dotenv

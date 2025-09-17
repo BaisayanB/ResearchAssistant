@@ -27,7 +27,7 @@ This project was built as part of my learning journey — exploring **PDF text e
 - **Smart Search** – Find papers by topic, title, or arXiv ID
 - **One-click Paper Chat** – Turn any paper into an interactive AI conversation
 - **Citation Export** – Get APA and BibTeX formats instantly
-- **PDF Text Extraction** – Clean extraction from PDFs using PyMuPDF (`fitz`)
+- **PDF Text Extraction** – Clean extraction from PDFs using PyMuPDF
 - **Context-aware LLM Responses** – Answers are grounded in the paper, structured, and math-friendly with LaTeX support
 
 ---
@@ -90,22 +90,6 @@ Then open your browser at http://localhost:8501.
 
 ---
 
-## 🗂️ How It Works
-
-<pre> ```mermaid
-flowchart TD
-A[User enters query / arXiv ID] --> B[Search arXiv API<br/>(fetch metadata)]
-B --> C[Download PDF<br/>from arXiv]
-C --> D[Extract text with PyMuPDF<br/>(clean & preprocess)]
-D --> E[Prepare context with metadata]
-E --> F[Initialize Gemini LLM Chat]
-F --> G[User asks questions]
-G --> H[Gemini generates structured<br/>analogy-first answers]
-H --> G[[Loop: Ask more questions]]
-``` </pre>
-
----
-
 ## 🔑 Key Technologies
 
 - **Streamlit** – Web interface
@@ -124,7 +108,11 @@ H --> G[[Loop: Ask more questions]]
 
 ## 🧭 Planned Enhancements
 
-(Your future ideas here…)
+- 🌐 Deploy on Streamlit Cloud for public access
+
+- 📊 Add a chat history section for my previous chats
+
+- 📄 Add a sidebar in the chat view that displays the paper’s PDF alongside the conversation
 
 ---
 
